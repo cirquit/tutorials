@@ -16,6 +16,7 @@ sudo apt-get update
 sudo apt-get install -y --no-install-recommends unzip p7zip-full sox libsox-dev libsox-fmt-all rsync
 
 export PATH=/opt/conda/bin:$PATH
+export CUBLAS_WORKSPACE_CONFIG=:4096:8
 rm -rf src
 pip install -r $DIR/../requirements.txt
 
